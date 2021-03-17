@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+  --fb: 'Alata', 'poppins', sans-serif;
+  --fs: 'Josefin Sans', 'poppins', sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: var(--fb);
+  width: 100%;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.img_des {
+  display: none;
+}
+
+.container {
+  padding: 3em 1.5em;
+}
+
+.main_hero {
+  min-height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../images/mobile/image-hero.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  position: relative;
+
+  & .logo {
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  & .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 3em 1.5em;
+    background: var(--Black);
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    clip-path: circle(0px at 90% 65px);
+    transition: clip-path ease-in-out 0.6s;
+
+    & .nav_link {
+      font-family: var(--fs);
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 0.6em;
+      text-align: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--White);
+      cursor: pointer;
+    }
+  }
+}
+
+
+.toggle:checked ~ .navbar {
+  clip-path: circle(100%);
+}
+
+.hero {
+  margin-top: 12em;
+  padding: 1.5em;
+  color: var(--White);
+  border: 2px solid var(--White);
+}
+
+
+.dec {
+  margin-top: 5em;
+
+  &_body {
+    margin: 3em 0;
+  }
+}
