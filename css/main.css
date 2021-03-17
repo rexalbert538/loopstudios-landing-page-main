@@ -1,5 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .hero_title,
 .dec_title,
 .creat_title {
@@ -27,6 +105,17 @@ p {
   line-height: 1.9;
   font-weight: 500;
   margin: 0 2.5em;
+}
+
+.card_text {
+  width: 150px;
+  color: var(--White);
+  font-family: var(--fs);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: left;
+  line-height: 1;
+  font-weight: 300;
 }
 
 *,
@@ -88,6 +177,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 header {
@@ -155,6 +249,86 @@ header .navbar .nav_link {
 
 .dec_body {
   margin: 3em 0;
+}
+
+.creation .creat_card {
+  margin-bottom: 3em;
+}
+
+.creation .creat_card.flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.creation .creat_card .card_box {
+  width: 100%;
+  height: 10em;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.creation .creat_card .card_box:last-child {
+  margin-bottom: 0;
+}
+
+.card_img {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-deep-earth.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-deep-earth.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(2) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-night-arcade.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-night-arcade.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(3) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-soccer-team.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-soccer-team.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(4) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-grid.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-grid.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(5) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-from-above.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-from-above.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(6) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-pocket-borealis.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-pocket-borealis.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(7) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-curiosity.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-curiosity.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(8) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(238, 238, 238, 0))), url("../images/mobile/image-fisheye.jpg") no-repeat center;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(238, 238, 238, 0)), url("../images/mobile/image-fisheye.jpg") no-repeat center;
+  background-size: cover;
 }
 
 /* component */
@@ -294,6 +468,12 @@ header .navbar .nav_link {
 }
 
 @media (min-width: 1200px) {
+  .img_des {
+    display: block;
+  }
+  .img_mob {
+    display: none;
+  }
   .container {
     max-width: calc(100% - 25em);
   }
@@ -301,11 +481,48 @@ header .navbar .nav_link {
     margin-left: 2em;
   }
   .hero {
-    margin-top: 12em;
+    margin-top: 11.5em;
     width: 48em;
   }
   .hero_title {
     font-size: 5.4rem;
+  }
+  .dec {
+    margin-bottom: 10em;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.4fr (150px)[2] 1fr;
+        grid-template-columns: 1.4fr repeat(2, 150px) 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .dec_img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .dec_body {
+    position: absolute;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    z-index: 3;
+    background: var(--White);
+    padding: 6em 4em 0;
+    margin: 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .dec_body .dec_title {
+    text-align: left;
+    font-size: 3.2rem;
+    margin-left: 0.8em;
+    max-width: 600px;
+  }
+  .dec_body .dec_text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -53,6 +53,10 @@ img {
   align-items: center;
 }
 
+.grid {
+  display: grid;
+}
+
 header {
   position: relative;
 
@@ -110,4 +114,71 @@ header {
   &_body {
     margin: 3em 0;
   }
+}
+
+
+.creation {
+  & .creat_card {
+    margin-bottom: 3em;
+
+    &.flex {
+      flex-direction: column;
+    }
+
+    & .card_box {
+      width: 100%;
+      height: 10em;
+      margin-bottom: 1.5em;
+      padding: 1.5em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.card_img {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-deep-earth.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(2) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-night-arcade.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(3) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-soccer-team.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(4) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-grid.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(5) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-from-above.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(6) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-pocket-borealis.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(7) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-curiosity.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.card_img:nth-child(8) {
+  background: linear-gradient(left,rgba(0,0,0,0.6), rgba(238, 238, 238, 0)), url('../images/mobile/image-fisheye.jpg') no-repeat center;
+  background-size: cover;
 }
