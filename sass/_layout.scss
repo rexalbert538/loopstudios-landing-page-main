@@ -120,7 +120,7 @@ header {
 .creation {
   & .creat_card {
     margin-bottom: 3em;
-
+    
     &.flex {
       flex-direction: column;
     }
@@ -130,6 +130,9 @@ header {
       height: 10em;
       margin-bottom: 1.5em;
       padding: 1.5em;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
 
       display: flex;
       flex-direction: column;
@@ -137,6 +140,26 @@ header {
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: inherit;
+        position: absolute;
+        background: rgba(140, 140, 140, 0.575);
+        top: 0;
+        left: -200%;
+      }
+
+      &:hover.card_box::after{
+        left: 0;
+      }
+
+      &:hover {
+       .card_text {
+         color: var(--Black);
+       }
       }
     }
   }
