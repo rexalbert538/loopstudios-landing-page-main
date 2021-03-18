@@ -68,6 +68,21 @@
       font-size: 4.3rem;
     }
   }
+
+  .creation {
+    & .creat_card {
+      &.grid {
+        grid-template-columns: repeat(2, 48%);
+        gap: 1.5em;
+      }
+
+      & .card_box {
+        margin-bottom: 0;
+        height: 28em;
+        padding: 2.3em;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -130,5 +145,115 @@
         text-align: left;
       }
     }
+  }
+
+  .creation {
+    & .creat_title {
+      margin-bottom: 0;
+      text-align: left;
+      font-size: 3rem;
+      margin-top: 30px;
+    }
+
+    &.grid {
+      grid-template-columns: 1fr 10em;
+      grid-template-rows: 100px 1fr;
+    }
+
+    & .creat_card {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      &.grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      & .card_box {
+        height: 40em;
+
+        & .card_text {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  .card_img {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-deep-earth.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(2) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-night-arcade.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(3) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-soccer-team.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(4) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-grid.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(5) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-from-above.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(6) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-pocket-borealis.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(7) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-curiosity.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card_img:nth-child(8) {
+    background: linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.6),
+        rgba(238, 238, 238, 0)
+      ),
+      url('../images/desktop/image-fisheye.jpg') no-repeat center;
+    background-size: cover;
   }
 }
