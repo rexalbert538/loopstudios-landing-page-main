@@ -39,19 +39,18 @@
   bottom: -6px;
 }
 
-.toggle:checked+.hamburger__toggle .hamburger {
+.toggle:checked + .hamburger__toggle .hamburger {
   transform: rotate(45deg);
 }
 
-.toggle:checked+.hamburger__toggle .hamburger::before {
+.toggle:checked + .hamburger__toggle .hamburger::before {
   transform: rotate(90deg) translateX(6px);
 }
 
-.toggle:checked+.hamburger__toggle .hamburger::after {
+.toggle:checked + .hamburger__toggle .hamburger::after {
   opacity: 0;
   transform: translateX(-50%);
 }
-
 
 .toggle {
   visibility: hidden;
