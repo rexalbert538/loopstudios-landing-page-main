@@ -92,7 +92,7 @@
 
     & .logo {
       margin-top: 30px;
-      margin-left:0;
+      margin-left: 0;
     }
 
     & .navbar {
@@ -135,13 +135,11 @@
       justify-self: end;
     }
 
-
     p {
       grid-row: 3/3;
       grid-column: 1/4;
     }
   }
-
 
   .card_img {
     background: linear-gradient(
@@ -337,6 +335,4 @@
       justify-self: end;
     }
   }
-
-
 }
