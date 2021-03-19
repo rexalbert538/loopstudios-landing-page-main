@@ -82,15 +82,9 @@ header {
     transition: clip-path ease-in-out 0.6s;
 
     & .nav_link {
-      font-family: var(--fs);
-      font-size: 2.2rem;
-      font-weight: 300;
       margin-bottom: 0.6em;
+      font-size: 2.2rem;
       text-align: left;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: var(--White);
-      cursor: pointer;
     }
   }
 }
@@ -115,6 +109,8 @@ header {
 }
 
 .creation {
+  margin-bottom: 3em;
+
   & .creat_card {
     margin-bottom: 3em;
 
@@ -174,6 +170,37 @@ header {
       background: var(--Black);
       color: var(--White);
     }
+  }
+}
+
+footer {
+  padding-top: 2em;
+  background: var(--Black);
+
+  & .logo {
+    margin: auto;
+    display: block;
+    margin-bottom: 1.5em;
+  }
+
+  & .navbar {
+    &.flex {
+      flex-direction: column;
+    }
+
+    & .nav_link {
+      margin-bottom: 1em;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+  }
+
+  & .social {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    list-style-type: none;
   }
 }
 

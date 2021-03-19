@@ -9,6 +9,15 @@
   line-height: 1;
 }
 
+.nav_link {
+  font-family: var(--fs);
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--White);
+  cursor: pointer;
+}
+
 .dec_title,
 .creat_title {
   text-align: center;
